@@ -1,0 +1,74 @@
+# Quản lý Album Ảnh (C++)
+
+## Mô tả
+Đây là chương trình quản lý album ảnh viết bằng ngôn ngữ C++, sử dụng danh sách liên kết đơn để lưu trữ dữ liệu. Người dùng có thể thêm, xóa, cập nhật, hiển thị, tìm kiếm và loại bỏ các ảnh trùng lặp trong album.
+
+## Tính năng
+- **Thêm ảnh**: Cho phép thêm một ảnh mới vào album.
+- **Xóa ảnh**: Xóa một ảnh theo tên.
+- **Cập nhật thông tin ảnh**: Chỉnh sửa ngày chụp và mô tả của một ảnh.
+- **Hiển thị album**: In ra danh sách tất cả các ảnh có trong album.
+- **Xóa ảnh trùng lặp**: Tự động xóa các ảnh có cùng tên.
+- **Tìm kiếm ảnh**: Tìm kiếm ảnh theo tên.
+
+## Hướng dẫn sử dụng
+
+### 1. **Biên dịch và chạy chương trình**
+Để chạy chương trình, bạn cần một trình biên dịch hỗ trợ C++, ví dụ **g++**.
+
+#### **Cách biên dịch:**
+```sh
+g++ main.cpp Album.cpp file_io.cpp -o album.exe
+
+Cách chạy chương trình:
+./album.exe
+Sau khi chạy, chương trình sẽ hiển thị menu cho phép bạn chọn các chức năng:
+
+=== QUẢN LÝ ALBUM ẢNH ===
+1. Thêm ảnh mới
+2. Xóa ảnh
+3. Cập nhật thông tin ảnh
+4. Hiển thị toàn bộ album
+5. Xóa các ảnh trùng lặp
+6. Tìm kiếm ảnh
+7. Thoát
+Chọn chức năng:
+Ví dụ thêm ảnh mới:
+Nhập tên ảnh: Hanoi_Trip
+
+Nhập ngày chụp: 20 03 2024
+
+Nhập mô tả: Ảnh chụp trong chuyến đi Hà Nội
+
+Ví dụ tìm kiếm ảnh:
+Nhập tên ảnh muốn tìm, nếu có trong danh sách, chương trình sẽ hiển thị thông tin ảnh.
+
+Ví dụ xóa ảnh:
+Nhập tên ảnh muốn xóa, nếu tìm thấy, chương trình sẽ xóa ảnh đó.
+
+Cấu trúc mã nguồn
+Date: Lớp lưu trữ ngày chụp ảnh.
+
+Photo: Cấu trúc dữ liệu lưu thông tin ảnh.
+
+Album: Lớp quản lý danh sách ảnh (danh sách liên kết đơn).
+
+AddPhoto(): Thêm ảnh vào danh sách.
+
+deletePhoto(): Xóa ảnh theo tên.
+
+updatePhoto(): Cập nhật thông tin ảnh.
+
+displayAlbum(): Hiển thị danh sách ảnh.
+
+removeDuplicates(): Xóa các ảnh trùng tên.
+
+displayMenu(): Hàm hiển thị menu chính của chương trình.
+
+Lưu ý:
+Nhập đúng định dạng ngày: dd mm yyyy
+- Dữ liệu sẽ được tự động lưu vào file khi bạn thêm, xóa, cập nhật hoặc thoát chương trình.
+- Khi mở lại chương trình, album sẽ được tự động khôi phục từ file.
+
+Liên hệ
+Nếu có thắc mắc hoặc cần hỗ trợ, vui lòng liên hệ [bau.dx233279@sis.hust.edu.vnvn].
