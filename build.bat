@@ -4,7 +4,7 @@ echo === Biên dịch Album Manager ===
 
 g++ main.cpp Album.cpp file_io.cpp -o main.exe
 if %errorlevel%==0 (
-    echo ✅ Biên dịch thành công!
+    echo Biên dịch thành công!
     echo === Chạy chương trình ===
     main.exe
 ) else (
